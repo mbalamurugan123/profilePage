@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>profile page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="edit.css">
+</head>
+<body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container bootstrap snippets bootdey">
+<div class="row">
+<div class="profile-nav col-md-3">
+<div class="panel">
+<div class="user-heading round">
+<a href="#">
+<img src="data:image/jpeg;base64,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" alt="">
+</a>
+<h1>User</h1>
+<p>userdetective@gmail.com</p>
+</div>
+<ul class="nav nav-pills nav-stacked">
+  <li><a href="profile.html"> <i class="fa fa-user"></i>  Profile</a></li>
+  <li><a href="#"> <i class="fa fa-calendar"></i> Recent Activity </a></li>
+  <li class="active"><a href="#"> <i class="fa fa-edit "></i>Edit Profile</a></li>
+</ul>
+</div>
+</div>
+<div class="profile-info col-md-9">
+<div class="panel">
+<form>
+
+</form>
+
+</div>
+<div class="panel">
+<div class="bio-graph-heading">
+    If you’re looking for answers, you came to the right place.
+  </div>
+<div class="panel-body bio-graph-info">
+<h1>Bio Graph</h1>
+<div class="row">
+<div class="bio-row">
+<p><span>First Name :</span><input type="text" value="user"></p>
+</div>
+<div class="bio-row">
+<p><span>Last Name :</span><input type="text" value="M"></p>
+</div>
+<div class="bio-row">
+<p><span>Country :</span><input type="text" value="India"></p>
+</div>
+<div class="bio-row">
+<p><span>Birthday</span><input type="date"></p>
+</div>
+<div class="bio-row">
+<p><span>Occupation </span><input type="text" value="detective"></p>
+</div>
+<div class="bio-row">
+<p><span>Email </span>: userdetective@gmail.com</p>
+</div>
+<div class="bio-row">
+<p><span>Mobile </span><input type="text" value="45782845"></p>
+</div>
+<div class="bio-row">
+<p><span>Phone </span><input type="text" value="736543292"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="btn1" style="background-color: green; float: right; border-right: 200px;color: black; border: 0px; padding: 10px;border-radius: 4px;font-size: larger;font-family: 'Open Sans', sans-serif;position: relative;right: 100px; text-decoration: none;" onclick="alertmsg()" href="profile.html">Update</a>
+<script>
+  function alertmsg() {
+    alert("Your profile has been updated")
+  }
+</script>
+</body>
+</html>
